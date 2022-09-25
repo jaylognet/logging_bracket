@@ -8,7 +8,8 @@
 /**
  * @important
  * 
- * Load PCA framework before automation tests.
+ * Load PAC framework before automation tests.
+
  */
 class Logging_Bracket {
 
@@ -63,8 +64,8 @@ class Logging_Bracket {
     private function save_api_logs() {
         global $access;
 
-        access_specifier_load_admin('pca');
-        $setting = new Access_Admin_Settings_Pca();
+        access_specifier_load_admin('pac');
+        $setting = new Access_Admin_Settings_Pac();
         $setting->setup_settings_access_loggers();
         
         //Only log if enabled in settings
